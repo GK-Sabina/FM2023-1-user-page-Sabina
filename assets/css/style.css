@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+.card-container{
+    width: 35vw;
+    height: 80vh;
+    border: 5px solid lightblue;
+}
+
+.header{
+    height: 50%;
+    width: 100%;
+    background-image: url(./../images/sea.jpg);
+    background-size: cover;
+}
+
+.card{
+    display: flex;
+    font-size: 16px;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -30%;
+}
+
+.links{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.links p{
+    font-weight: bold;
+}
+
+.links span{
+    color: gray;
+}

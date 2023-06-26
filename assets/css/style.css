@@ -2,9 +2,20 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-image: url(./../images/background.jpg);
+}
+
 .card-container{
     width: 35vw;
-    height: 80vh;
+    min-width: 320px;
+    max-width: 450px;
+    height: 65vh;
+    min-height: 520px;
     border: 5px solid lightblue;
 }
 
@@ -14,6 +25,15 @@
     background-image: url(./../images/sea.jpg);
     background-size: cover;
 }
+ 
+h2{
+    margin-bottom: 0;
+}
+
+h3{
+    margin-top: 0;
+    color: rgb(106, 106, 106);
+}
 
 .card{
     display: flex;
@@ -22,6 +42,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
 }
 
 .user-img{
@@ -36,13 +57,34 @@
     display: flex;
     width: 80%;
     justify-content: space-around;
-    margin-bottom: 5%;
+    margin-bottom: 80%;
+    margin-top: 60px;
+    text-align: center;
+    border-top: 1px solid gray;
+}
+
+.following{
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div{
+    padding-top: 0;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .links p{
+    font-size: 20px;
     font-weight: bold;
+    margin: 0;
 }
 
 .links span{
+    font-size: 14px;
+    margin-top: 0;
     color: gray;
 }
